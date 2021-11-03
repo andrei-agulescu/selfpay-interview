@@ -1,0 +1,6 @@
+<app-sp-header (save)="onSave()">
+  <app-sp-filter></app-sp-filter>
+</app-sp-header>
+<main>
+  <app-sp-list [locationItems]="locationItems" (selected)="onListItemSelected($event)"></app-sp-list>
+</main>

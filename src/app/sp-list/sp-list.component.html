@@ -1,0 +1,6 @@
+<div class="sp-list-item" *ngFor="let item of locationItems"
+     (click)="onItemClicked(item)"
+     [class.selected]="selectionModel[item.locationId]"
+>
+  {{ item.name + ' ' + item.city + ' ' + item.country }}
+</div>
